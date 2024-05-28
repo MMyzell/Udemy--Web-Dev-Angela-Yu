@@ -5,6 +5,10 @@
   padding: 10px;
 }
 
+.outer-box {
+  background-color: purple;
+}
+
 p {
   color: yellow;
   margin: 0;
