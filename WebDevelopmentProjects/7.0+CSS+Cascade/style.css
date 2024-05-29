@@ -5,7 +5,7 @@
   padding: 10px;
 }
 
-.outer-box {
+#outer-box {
   background-color: purple;
 }
 
@@ -13,4 +13,12 @@ p {
   color: yellow;
   margin: 0;
   padding: 0;
+}
+
+.white-text{
+  color: white;
+}
+
+.inner-box {
+  background-color: red;
 }
