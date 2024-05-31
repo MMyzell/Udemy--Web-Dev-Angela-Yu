@@ -6,7 +6,59 @@
   <title>CSS Flag Project</title>
   <style>
     /* Write your CSS Code here */
+
+    /* Red background */
+    .flag {
+      background-color: red;
+      z-index: 1;
+      position: relative;
+      height: 600px;
+      width: 900px;
+    }
+  
+    /* Words "The Flag" */
+    .flag > p {
+      color: white;
+      font-size: 50px;
+      position: absolute;
+      text-align: center;
+      margin-left: 40%;
+      margin-top: 0%;
+    }
+
+    /*Blue middle part*/
+    .flag > div {
+      background-color: blue;
+      z-index: 2;
+      position: absolute;
+      top: 25%;
+      height: 50%;
+      width: 100%;
+    }
     
+
+    /* White Circle */
+    .flag > div > div {
+      background-color: white;
+      border-radius: 50%;
+      z-index: 3;
+      position: absolute;
+      height: 200px;
+      width: 200px;
+      left: 40%;
+      margin-top: 5%;
+    }
+
+    /* Words "of Laos" */
+    .flag > div > div > p {
+      color: black;
+      text-align: center;
+      font-size: 5rem;
+      position: relative;
+      top: -40%;
+      bottom: 0%;
+    }
+
   </style>
 </head>
 
