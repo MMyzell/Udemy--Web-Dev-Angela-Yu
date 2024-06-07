@@ -14,7 +14,59 @@
       }
 
       /* Hint: What can you do with a media query and flexbox? */
+      .pricing-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-flow: 1;
+        align-items: center;
+        align-content: center;
+      }
+
+      li {
+        list-style: none;
+        padding: 3px 0px;
+      }
+
+      .pricing-plan {
+        background-color: lightgrey;
+        margin: 1rem;
+        border-radius: 5px;
+        align-self: center;
+        max-width: 400px;
+      }
+
+      .pricing-plan > * {
+        align-items: center;
+        text-align: center;
+        padding: 3px 3px;
+      }
+
+      button.plan-button {
+        background-color: orange;
+        border-radius: 5px;
+        margin-bottom: 3px;
+      }
+
+      .plan-title {
+        font-size: 28px;
+        font-weight: bold;
+      }
+
+      .plan-price {
+        font-size: 42px;
+        font-weight: bold;
+      }
+
       @media (max-width: 1250px) {
+
+        .pricing-container {
+          flex-direction: column;
+        }
+
+        .pricing-plan {
+          width: 90%;
+        }
       }
     </style>
   </head>
@@ -29,7 +81,7 @@
           <li>✅ 1 User</li>
           <li>🚫 Support</li>
         </ul>
-        <button class="plan-button">Sign Up</button>
+        <li><button class="plan-button">Sign Up</button></li>
       </div>
       <div class="pricing-plan">
         <div class="plan-title">Standard</div>
@@ -39,7 +91,7 @@
           <li>✅ 5 Users</li>
           <li>✅ Phone &amp; Email Support</li>
         </ul>
-        <button class="plan-button">Sign Up</button>
+        <li><button class="plan-button">Sign Up</button></li>
       </div>
       <div class="pricing-plan">
         <div class="plan-title">Premium</div>
@@ -49,7 +101,7 @@
           <li>✅ 10 Users</li>
           <li>✅ 24/7 Support</li>
         </ul>
-        <button class="plan-button">Sign Up</button>
+        <li><button class="plan-button">Sign Up</button></li>
       </div>
     </div>
   </body>
