@@ -33,7 +33,7 @@ $(document).keydown(function(event) {
     gamePattern = [];
     userClickedPattern = [];
     nextSequence();
-  }
+  };
 
 });
 
